@@ -30,11 +30,13 @@
 			"name"			:	"Event Name",
 			"constraints"	:	[
 				{
-					"key"	:	value
-				},
+					"key"	:	value,
+					"type"	:	hard/soft
+				}
 				{
-					"key"	:	value
-				},
+					"key"	:	value,
+					"type"	:	hard/soft
+				}
 				...
 			]
 		},
@@ -48,9 +50,11 @@
 			"constraints"	:	[
 				{
 					"key"	:	value,
+					"type"	:	hard/soft
 				},
 				{
-					"key"	:	value
+					"key"	:	value,
+					"type"	:	hard/soft
 				},
 				...
 			]
@@ -62,9 +66,11 @@
 			"constraints"	:	[
 				{
 					"key"	:	value,
+					"type"	:	hard/soft
 				},
 				{
-					"key"	:	value
+					"key"	:	value,
+					"type"	:	hard/soft
 				},
 				...
 			]
