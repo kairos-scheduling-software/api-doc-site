@@ -7,7 +7,7 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" href="home">
+		<a class="navbar-brand" href="{{ URL::route('home') }}">
 			<img src="{{ URL::asset('assets/images/kairos_cropped.png') }}" id="logo_image"></img>
 		</a>
 	</div>
