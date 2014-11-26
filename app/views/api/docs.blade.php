@@ -17,11 +17,11 @@
 				{
 					"key"	:	value,
 					"type"	:	hard/soft
-				}
+				},
 				{
 					"key"	:	value,
 					"type"	:	hard/soft
-				}
+				},
 				...
 			]
 		},
@@ -32,11 +32,11 @@
 				{
 					"key"	:	value,
 					"type"	:	hard/soft
-				}
+				},
 				{
 					"key"	:	value,
 					"type"	:	hard/soft
-				}
+				},
 				...
 			]
 		},
@@ -104,6 +104,7 @@
 	<h3><b>Request:</b>  POST /api/check</h3>
 	<pre class="line-numbers language-json"><code class="language-json">{
 	"api-key"	:	"yourApiKey",
+	... some representation of the schedule to check ...
 }</code></pre>
 	<h3><b>Response:</b></h3>
 	<pre class="line-numbers language-json"><code class="language-json">{
