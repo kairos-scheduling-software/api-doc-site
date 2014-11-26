@@ -15,9 +15,11 @@ class HomeController extends BaseController {
 	|
 	*/
 
-	public function showWelcome()
+	public function home()
 	{
-		return View::make('hello');
+		return View::make('api.docs')->with([
+			'page_name'	=>	"HOME"
+		]);
 	}
 
 }
