@@ -4,6 +4,7 @@
 
 <div class="top-buffer"></div>
 <div class="container">
+	<div class="col-md-8">
 	<h1>API Documentation</h1>
 	<h2>Generate a new schedule</h2>
 	<h3><b>Request:</b>  POST /api/new</h3>
@@ -111,6 +112,7 @@
 	"unsatisfiedSoft"	:	[constraintID, constraintID, ... ],
 	"unsatisfiedHard"	:	[constraintID, constraintID, ... ]
 }</code></pre>
+</div>
 </div>
 <div class="top-buffer"></div
 
