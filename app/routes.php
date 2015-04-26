@@ -15,3 +15,15 @@ Route::get('/', array(
 	'as'	=>	'home',
 	'uses'	=>	'HomeController@home'
 ));
+
+Route::get('/register', array(
+        'as'    =>      'register',
+        'uses'  =>      'HomeController@register'
+));
+
+Route::post('/postRegister', array(
+    'as' => 'postRegister',
+    'uses' => 'HomeController@postRegister'
+));
+
+Route::get('/about', array('as' => 'about', 'uses' => 'HomeController@about'));
