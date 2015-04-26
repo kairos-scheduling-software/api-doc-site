@@ -7,15 +7,18 @@
 <div class="container">
   <div class="col-md-8">
   <h1>About Kairos</h1>
-  <br>
+  <br><br>
+  <img src="{{URL::asset('assets/images/tyler_profile.jpg')}}" id="tyler_profile" width=200px/>
   <h2>Tyler Chapman</h2>
-  <p>This is a paragraph about Tyler.</p>
+  <p>Tyler is an experienced web developer having worked for Spillman Technologies as an intern. He has had a passion for working on software for many years after learning java in high school. Tyler has been a great asset to the team working on the database, network communication and the import manager for the project.</p>
   <br>
+  <img src="{{URL::asset('assets/images/nate_profile.png')}}" id="nate_profile" width=200px/>
   <h2>Nate Crandall</h2>
-  <p>This is a paragraph about Nate.</p>
+  <p>Nate is a visualization wizard.  He crafted and perfected all of the visualizations for this project.</p>
   <br>
+  <img src="{{URL::asset('assets/images/vinh_profile.png')}}" id="vinh_profile" width=200px/>
   <h2>Vinh Dang</h2>
-  <p>This is a paragraph about Vinh.</p>
+  <p>Vinh is a highly talented all-around programmer.  Equally at home solving hard combinatorial problems as writing a GUI, Vinh lent his expertise to many areas of this project.  Upon graduation this year he plans to attend graduate school and continue studying computer science.</p>
   <br>
   <img src="{{URL::asset('assets/images/vince_profile.png')}}" id="vince_profile" width=200px/>
   <h2>Vince Oveson</h2>
