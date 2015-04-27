@@ -49,10 +49,35 @@ class HomeController extends BaseController {
 		if($validator -> fails())
 		  return Redirect::route('register') -> withErrors($validator) -> withInput(Input::all());
 		// send email address to Heroku
-		// generate email message with key and send to user
-		// display
-		// how can i send the $email variable here?
-		return View::make('api.key_sent') -> with(['page_name' => "KEYSENT",
-							   'email' => $email]);
+		$returnMessage = Communication::requestKey($email);
+		$parsedKey = json_decode($returnMessage);
+
+		if(property_exists($parsedKey, 'key'))
+		{
+			// generate email message with key and send to user
+			Mail::send('emails.auth.apikey', array('key' => $parsedKey->key), function($message) use ($email)
+			{
+				$message->to($email, 'Api user')->subject('Kairos API Key');
+			});
+			// display
+			return View::make('api.key_sent') -> with(['page_name' => "KEYSENT",
+							   'email' => $email, 'key' => $parsedKey->key]);
+		}
+		return Redirect::route('register') -> withErrors($validator) -> withInput(Input::all()) -> with('global', 'Email is already in use or an error occured with the server');	
+	}
+
+	public function exampleAPI()
+	{
+		$json = Input::get('json');
+		$json = str_replace(array("\n", "\r"), '', $json);
+		$mode = Input::get('mode');
+
+		if(!$json || !$mode)
+		{
+			return Response::json(['error' => 'Could not make the requests using the supplied input'], 500);
+		}
+
+		$data = Communication::runExample($mode, $json);
+		return Response::json(['success' => "Recieved a response from the solver", 'data' => $data], 200);
 	}
 }

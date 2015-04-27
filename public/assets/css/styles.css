@@ -758,3 +758,8 @@ footer {
 	border: 1px solid;
 	background-color: white;
 }
+
+#inputsize
+{
+	width: 500px!important;
+}

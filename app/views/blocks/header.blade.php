@@ -19,20 +19,12 @@
 		<ul class="nav navbar-nav">
 				<li {{ $page_name == 'HOME' ? 'class="selected_page"' : '' }}>
 					<a href="{{ URL::route('home') }}">Home</a>
-				</li>{{--
-				<li {{ $page_name == 'SCHEDULES' ? 'class="selected_page"' : '' }}>
-					<a href="#projects">Schedules</a>
 				</li>
-				<li {{ $page_name == 'DATATOOLS' ? 'class="selected_page"' : '' }}>
-					<a href="#data-tools">Data Tools</a>
-				</li>--}}
+				<li {{ $page_name == 'REGISTER' ? 'class="selected_page"' : '' }}>
+					<a href="{{ URL::route('register') }}">Request Key</a>
+				</li>
+				<li {{ $page_name == 'ABOUT' ? 'class="selected_page"' : '' }}>
+					<a href="{{ URL::route('about') }}">ABOUT KAIROS</a>
+				</li>
 		</ul>
-	
-		<ul class="nav navbar-nav navbar-right">
-			<li {{ $page_name == 'SETTINGS' ? 'class="selected_page"' : '' }}>
-				<a href="#settings">{{ FA::icon('cogs') }} Settings</a>
-			</li>
-			<li><a href="#logout">Logout</a></li>
-		</ul>
-	</div><!-- /.navbar-collapse -->
 </nav>

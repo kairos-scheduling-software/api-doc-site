@@ -27,3 +27,5 @@ Route::post('/postRegister', array(
 ));
 
 Route::get('/about', array('as' => 'about', 'uses' => 'HomeController@about'));
+
+Route::post('/example', array('as' => 'example', 'uses' => 'HomeController@exampleAPI'));

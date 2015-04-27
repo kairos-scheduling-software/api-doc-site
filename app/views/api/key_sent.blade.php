@@ -10,3 +10,4 @@
   <h2>As soon as it is ready it will be sent to you at {{$email}}.</h2>
   </div>
 </div>
+@stop

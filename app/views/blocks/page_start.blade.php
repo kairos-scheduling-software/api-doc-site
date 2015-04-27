@@ -35,6 +35,11 @@
     <!-- Prism syntax highlighter -->
     <link href="{{ URL::asset('assets/css/prism.css') }}"rel='stylesheet'>
 
+    @if($page_name == "HOME")
+        <!--example script-->
+        <script src="{{URL::asset('assets/js/main.js')}}"></script>
+    @endif
+
     <!-- FontAwesome CSS -->
     {{ FA::css() }}
 
