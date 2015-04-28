@@ -18,13 +18,13 @@
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		<ul class="nav navbar-nav">
 				<li {{ $page_name == 'HOME' ? 'class="selected_page"' : '' }}>
-					<a href="{{ URL::route('home') }}">Home</a>
+					<a href="{{ URL::route('home') }}"> {{ FA::icon('home') }} Home</a>
 				</li>
 				<li {{ $page_name == 'REGISTER' ? 'class="selected_page"' : '' }}>
-					<a href="{{ URL::route('register') }}">Request Key</a>
+					<a href="{{ URL::route('register') }}">{{ FA::icon('key') }} Request Key</a>
 				</li>
 				<li {{ $page_name == 'ABOUT' ? 'class="selected_page"' : '' }}>
-					<a href="{{ URL::route('about') }}">ABOUT KAIROS</a>
+					<a href="{{ URL::route('about') }}">{{ FA::icon('info-circle') }} About Kairos</a>
 				</li>
 		</ul>
 </nav>
