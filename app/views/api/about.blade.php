@@ -4,7 +4,7 @@
 
 <div class="top-buffer"></div>
 
-<div class="container">
+<div id="about-page-content" class="container" style="opacity: 0">
   <div class="col-md-8">
     <h1>About Kairos</h1>
     <br><br>

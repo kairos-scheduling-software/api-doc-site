@@ -4,6 +4,11 @@
         <script>
         $(function(){
             $('#logo_image').css({marginTop: '10px'});
+
+            setTimeout(function() {
+                $('#about-page-content').css("opacity", "1");
+            }, 50);
+            
         });
         </script>
     @endif
