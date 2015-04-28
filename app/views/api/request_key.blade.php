@@ -13,7 +13,7 @@
         		{{$errors->first('email')}}
     		@endif
     		</br>
-    		<input class="btn btn-forgot" type='submit' name='request' value='request'></input></br>
+    		<input class="btn btn-primary" type='submit' name='request' value='request'></input></br>
 		</form>
 
 		@if(Session::has('global'))

@@ -4,7 +4,7 @@
 
 <div class="top-buffer"></div>
 <div class="container">
-<div class="col-md-8">
+<div class="col-md-8" style="margin-bottom: 40px">
 <h1>API Documentation</h1>
 <h2><b>Request:</b>  POST /api/new</h2>
 <h3>Used to generate a new schedule.</h3>
@@ -103,17 +103,17 @@
 
   <form id="example-form" action="{{URL::route('example')}}" method="POST">
     Mode:
-    <select id="mode" class="inputsize">
+    <select id="mode" class="form-control inputsize">
       <option class="inputsize" value="new">new</option>
       <option class="inputsize" value="check">check</option>
     </select>
     </br></br>
     Enter Json: 
     </br>
-    <textarea cols="100" rows="10" id="json">
+    <textarea class="form-control" cols="100" rows="10" id="json">
     </textarea>
     </br>
-    <input id="submit" class="btn btn-forgot" type='submit' name='submit' value='Send Json to solver'></input></br>
+    <input id="submit" class="btn btn-primary" type='submit' name='submit' value='Send JSON to solver'></input></br>
 
     <div id="example-response-text"></div>
   </form>

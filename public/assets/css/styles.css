@@ -759,7 +759,19 @@ footer {
 	background-color: white;
 }
 
-#inputsize
+.inputsize
 {
 	width: 500px!important;
+}
+
+select.form-control {
+	display: inline-block;
+}
+
+.row {
+	margin-bottom: 40px;
+}
+
+.img-circle {
+	box-shadow: 3px 3px 6px #363636;
 }
