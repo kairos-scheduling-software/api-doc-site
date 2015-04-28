@@ -1,17 +1,5 @@
 	<!-- Load scripts -->
     <script src="{{ URL::asset('assets/js/jquery-2.1.1.min.js') }}"></script>
-    @if($page_name == "ABOUT")
-        <script>
-        $(function(){
-            $('#logo_image').css({marginTop: '10px'});
-
-            setTimeout(function() {
-                $('#about-page-content').css("opacity", "1");
-            }, 50);
-            
-        });
-        </script>
-    @endif
     <script src="{{ URL::asset('assets/js/bootstrap.min.js') }}"></script>
     <script src="{{ URL::asset('assets/js/main.js') }}"></script>
 

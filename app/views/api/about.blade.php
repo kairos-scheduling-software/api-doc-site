@@ -4,7 +4,7 @@
 
 <div class="top-buffer"></div>
 
-<div id="about-page-content" class="container" style="opacity: 0">
+<div id="about-page-content" class="container">
   <div class="col-md-8">
     <h1>About Kairos</h1>
     <br><br>
@@ -59,3 +59,5 @@
     </div>
   </div>
 </div>
+
+@stop
