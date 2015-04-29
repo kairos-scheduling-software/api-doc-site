@@ -44,7 +44,7 @@
       </div>
       <div class="col-md-8">
         <h2>Vince Oveson</h2>
-        <p>Vince Oveson has worked as a web developer at Aspen Digital for over a year, as of April 2015.  His specialties include php back end development and front end development using jQuery, CSS3, and HTML5.  Vince has been the primary UI designer/developer for Kairos.</p>
+        <p>Vince has worked as a web developer at Aspen Digital since April 2014.  His specialties include php back end development and front end development using jQuery, CSS3, Bootstrap, and HTML5.  Vince has been the primary UI designer/developer for Kairos.</p>
       </div>
     </div>
 

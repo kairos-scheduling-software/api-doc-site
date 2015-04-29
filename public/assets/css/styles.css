@@ -773,5 +773,5 @@ select.form-control {
 }
 
 .img-circle {
-	box-shadow: 3px 3px 6px #363636;
+	box-shadow: 0 0 15px #363636;
 }
