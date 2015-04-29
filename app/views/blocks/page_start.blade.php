@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    @if($page_name == "ABOUT")
+<meta name="robots" content="noindex">	
+    @endif
     <title>KAIROS
         <?php
             switch($page_name)

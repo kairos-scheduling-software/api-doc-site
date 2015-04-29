@@ -24,7 +24,7 @@
       </div>
       <div class="col-md-8">
         <h2>Nate Crandall</h2>
-        <p>Nate is a visualization wizard.  He crafted and perfected all of the visualizations for this project.</p>
+        <p>Nate currently works as a data architect for the University Health Sciences. Prior to this he worked as a Cerner CCL and web developer. Nate's primary focus for the Kairos project was to create data visualizations using the D3 framework.</p>
       </div>
     </div>
 
